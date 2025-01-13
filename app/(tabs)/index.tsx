@@ -18,8 +18,6 @@ const App: React.FC = () => {
 
   const searchVendors = async () => {
     try {
-  
-      
       const response = await axios.get('http://192.168.255.100:5000/api/vendors', {
         params: { location, service },
       });
